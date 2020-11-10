@@ -3,6 +3,7 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../res/main.css">
+		<script type="text/javascript" res="../res/signin.js"></script>
 	</head>
 	<body>
 		<img src="../res/pictures/SL.jpg" width="100%">
