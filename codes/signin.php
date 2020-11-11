@@ -6,7 +6,7 @@
 		<script type="text/javascript" src="../res/signin.js"></script>
 	</head>
 	<body>
-		<img src="../res/pictures/SL.jpg" width="100%">
+		<img src="../res/pictures/SL3.jpg" width="100%">
 		<div>
 			<ul id = "ulnav">
 			  <li style="float: left;"><a id = "nava" href="home.html">HOME</a></li>
