@@ -2,6 +2,13 @@
 
 In this project you will build a moderate-size Web site. Each group will have 4 members, and each member should contribute equally to the project
 
+## Setting Up
+
+- Download and install the latest version of php
+- open a command prompt in projects root directory
+- run the command to start a server on localhost in a given port
+- command : `php -S localhost:4000`
+
 ## General Requirements
 
 - Website should have minimum 10 pages 
