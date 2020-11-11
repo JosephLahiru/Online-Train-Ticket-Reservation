@@ -23,7 +23,7 @@ In this project you will build a moderate-size Web site. Each group will have 4 
 -	You should have a consistent navigation, for example if you have a menu which links to different pages, the menu should appear in the same place in all pages, so that users can easily find the menu and be able to navigate to different pages.
 -	You should use one CSS external stylesheet, and optionally internal styles in different pages according to the requirements.
 -	You should organize all the pages in a good structure.
--	You should layout your web pages using &gt;div&lt; technique.
+-	You should layout your web pages using &lt;div&gt; technique.
 -	If you want to use a layout which did not introduce in the class, that's OK. But, the layout can't be too simple.
 -	Your pages should be easy to read, easy to navigate
 -	You should have enough text and at least 10 images in your website. You're also encouraged to add some multi-media contents (audio, video, flash etc.) if you want.
@@ -55,4 +55,4 @@ In this project you will build a moderate-size Web site. Each group will have 4 
 
 ## Submission
 
-You should compress all your files into a zip (.zip) file and name like "project_&gt;group-number&lt;.zip". Submit it to LMS on or before 30-11-2020. 
+You should compress all your files into a zip (.zip) file and name like "project_&lt;group-number.zip&gt;". Submit it to LMS on or before 30-11-2020. 
