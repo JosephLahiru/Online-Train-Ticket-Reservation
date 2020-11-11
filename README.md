@@ -4,10 +4,11 @@ In this project you will build a moderate-size Web site. Each group will have 4 
 
 ## Setting Up
 
-- Download and install the latest version of php
-- open a command prompt in projects root directory
-- run the command to start a server on localhost in a given port
-- command : `php -S localhost:4000`
+- Download and install the latest version of php.
+- Open a command prompt in projects root directory.
+- Run the command to start a server on localhost in a given port.
+- Command : `php -S localhost:4000`
+- Then run `http://localhost:4000/codes/index.html` in your favorite browser.
 
 ## General Requirements
 
