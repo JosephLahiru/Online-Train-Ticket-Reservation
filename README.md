@@ -4,7 +4,8 @@ In this project you will build a moderate-size Web site. Each group will have 4 
 
 ## Setting Up
 
-- Download and install the latest version of php.
+- From the belnow link download and install the latest version of php.
+- [php website](https://windows.php.net/download#php-7.4)
 - Open a command prompt in projects root directory.
 - Run the command to start a server on localhost in a given port.
 - Command : `php -S localhost:4000`
