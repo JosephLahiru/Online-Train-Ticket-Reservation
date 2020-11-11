@@ -4,7 +4,7 @@ In this project you will build a moderate-size Web site. Each group will have 4 
 
 ## Setting Up
 
-- From this [link](https://windows.php.net/download#php-7.4) download and install the latest version of php.
+- From this [link](https://windows.php.net/download#php-7.4) download and install the latest version of php.(x64 Thread Safe)
 - Open a command prompt in projects root directory.
 - Run the command to start a server on localhost in a given port.
 - Command : `php -S localhost:4000`
