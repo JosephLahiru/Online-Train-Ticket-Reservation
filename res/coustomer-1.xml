@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Station>
+  <user>
+    <id>1</id>
+    <First_Name>Joseph</First_Name>
+    <Second_Name>Rasanjana</Second_Name>
+    <Phone_Number>0772970497</Phone_Number>
+    <Email>joseph.rasanjana1@gmail.com</Email>
+    <Birth_Date>19</Birth_Date>
+    <Birth_Month>March</Birth_Month>
+    <Birth_Year>1999</Birth_Year>
+    <Gender>Male</Gender>
+  </user>
+</Station>

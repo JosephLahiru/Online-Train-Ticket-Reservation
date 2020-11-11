@@ -3,7 +3,7 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../res/main.css">
-		<script type="text/javascript" res="../res/signin.js"></script>
+		<script type="text/javascript" src="../res/signin.js"></script>
 	</head>
 	<body>
 		<img src="../res/pictures/SL.jpg" width="100%">
@@ -19,13 +19,13 @@
 		</div>
 		<div id="top">SIGN IN</div>
 		<div id="formd">
-			<form name="signin" action="signin.php" method="post">
+			<form name="signin" action="signin.php" method="post" id="signin" >
 				First name : <input type="text" name="fname"><br>
 				Surname : <input type="text" name="sname"><br>
 				Mobile number : <input type="text" name="mnum"><br>
 				Email : <input type="text" name="email"><br>
 				Date of birth:
-				<select>
+				<select name="Bdate">
 					<option>Date</option>
 					<option>1</option>
 					<option>2</option>
@@ -59,7 +59,7 @@
 					<option>30</option>
 					<option>2</option>
 				</select>
-				<select>
+				<select name="Bmonth">
 					<option>Month</option>
 					<option>January</option>
 					<option>February</option>
@@ -74,7 +74,7 @@
 					<option>November</option>
 					<option>December</option>
 				</select>
-				<select>
+				<select name="Byear">
 					<option>Year</option>
 					<option>2020</option>
 					<option>2019</option>
@@ -101,31 +101,97 @@
 					<option>1998</option>
 				</select>
 				Gender:
-				<select>
+				<select name="gender">
 					<option>Gender</option>
 					<option>Male</option>
 					<option>Female</option>
 				</select>
-				<input type="submit" name="Submit">
+				<input type="button" value="Submit" id="sub" onclick="check_val()">
 			</form>		
 		</div>
 
 		<?php
-		$fname = $_POST["fname"];
-		$sname = $_POST["sname"];
-		$mnum = $_POST["mnum"];
-		$email = $_POST["email"];
+		if(isset($_POST["fname"]))
+		{
+			$counter = simplexml_load_file("../res/counter.xml") or die("Failed to load");
+			$count = $counter->counter[0]->count;
+			$count = $count+1;
 
-		$myfile = fopen("data.txt", "a") or die("Unable to open file!");
-		fwrite($myfile, $fname);
-		fwrite($myfile, "\n");
-		fwrite($myfile, $sname);
-		fwrite($myfile, "\n");
-		fwrite($myfile, $mnum);
-		fwrite($myfile, "\n");
-		fwrite($myfile, $email);
-		fwrite($myfile, "\n");
-		fclose($myfile);
+			$fname = $_POST["fname"];
+			$sname = $_POST["sname"];
+			$mnum = $_POST["mnum"];
+			$email = $_POST["email"];
+			$Bdate = $_POST["Bdate"];
+			$Bmonth = $_POST["Bmonth"];
+			$Byear = $_POST["Byear"];
+			$gender = $_POST["gender"];
+
+			$dom = new DOMDocument();
+
+			$dom->encoding = 'utf-8';
+			$dom->xmlVersion = '1.0';
+			$dom->formatOutput = true;
+
+			$xml_file_name = "../res/coustomer-".$count.".xml";
+
+			$root = $dom->createElement('Station');
+
+			$user_node = $dom->createElement('user');
+
+			$child_node_id = $dom->createElement('id', $count);
+			$user_node->appendChild($child_node_id);
+
+			$child_node_fname = $dom->createElement('First_Name', $fname);
+			$user_node->appendChild($child_node_fname);
+
+			$child_node_sname = $dom->createElement('Second_Name', $sname);
+			$user_node->appendChild($child_node_sname);
+
+			$child_node_phoneNum = $dom->createElement('Phone_Number', $mnum);
+			$user_node->appendChild($child_node_phoneNum);
+
+			$child_node_email = $dom->createElement('Email', $email);
+			$user_node->appendChild($child_node_email);
+
+			$child_node_bdate = $dom->createElement('Birth_Date', $Bdate);
+			$user_node->appendChild($child_node_bdate);
+
+			$child_node_bmonth = $dom->createElement('Birth_Month', $Bmonth);
+			$user_node->appendChild($child_node_bmonth);
+
+			$child_node_byear = $dom->createElement('Birth_Year', $Byear);
+			$user_node->appendChild($child_node_byear);
+
+			$child_node_gender = $dom->createElement('Gender', $gender);
+			$user_node->appendChild($child_node_gender);
+
+			$root->appendChild($user_node);
+			$dom->appendChild($root);
+
+			$dom->save($xml_file_name);
+
+			//------------------------------------------------------------------
+
+			$cdom = new DOMDocument();
+
+			$cdom->encoding = 'utf-8';
+			$cdom->xmlVersion = '1.0';
+			$cdom->formatOutput = true;
+
+			$xml_file_name = "../res/counter.xml";
+
+			$root = $cdom->createElement('data');
+
+			$count_node = $cdom->createElement('counter');
+
+			$child_node_count = $cdom->createElement('count', $count);
+			$count_node->appendChild($child_node_count);
+
+			$root->appendChild($count_node);
+			$cdom->appendChild($root);
+
+			$cdom->save($xml_file_name);
+		}
 		?>
 
 	</body>
