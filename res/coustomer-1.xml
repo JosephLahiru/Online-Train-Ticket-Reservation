@@ -11,4 +11,15 @@
     <Birth_Year>1999</Birth_Year>
     <Gender>Male</Gender>
   </user>
+    <user>
+    <id>2</id>
+    <First_Name>Samanthi Kusum</First_Name>
+    <Second_Name>Konara</Second_Name>
+    <Phone_Number>0767105988</Phone_Number>
+    <Email>samanthikonara12@gmail.com</Email>
+    <Birth_Date>31</Birth_Date>
+    <Birth_Month>December</Birth_Month>
+    <Birth_Year>1999</Birth_Year>
+    <Gender>Female</Gender>
+  </user>
 </Station>
