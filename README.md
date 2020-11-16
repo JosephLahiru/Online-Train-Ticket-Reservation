@@ -1,15 +1,15 @@
 # Mini Project Instructions
 
 In this project you will build a moderate-size Web site. Each group will have 4 members, and each member should contribute equally to the project
+<!---
+## Setting Up
 
-[//] <> ## Setting Up
-
-[//] <> - From this [link](https://windows.php.net/download#php-7.4) download and install the latest version of php.(x64 Thread Safe)
-[//] <> - Open a command prompt in projects root directory.
-[//] <> - Run the command to start a server on localhost in a given port.
-[//] <> - Command : `php -S localhost:4000`
-[//] <> - Then run `http://localhost:4000/codes/index.html` in your favorite browser.
-
+- From this [link](https://windows.php.net/download#php-7.4) download and install the latest version of php.(x64 Thread Safe)
+- Open a command prompt in projects root directory.
+- Run the command to start a server on localhost in a given port.
+- Command : `php -S localhost:4000`
+- Then run `http://localhost:4000/codes/index.html` in your favorite browser.
+-->
 ## General Requirements
 
 - Website should have minimum 10 pages 
