@@ -44,6 +44,16 @@ function check_val()
 		form.sname.focus();
 		return false;
 	}
+	else if(form.password.value == "" || form.password.value == null)
+	{
+		alert("Please enter your password.");
+		form.password.focus();
+	}
+	else if(form.password.value !=  form.passwordCom.value)
+	{
+		alert("Comformation password and password must be the same.");
+		form.passwordCom.focus();
+	}
 	else
 	{
 		alert("[SINGIN SUCESSFUL]")
@@ -63,7 +73,7 @@ function check_log_val()
 	else if(form.password.value == "" || form.password.value == null)
 	{
 		alert("Please enter your password.");
-		form.email.focus();
+		form.password.focus();
 	}
 	else
 	{
