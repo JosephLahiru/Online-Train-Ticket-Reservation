@@ -1,5 +1,6 @@
 
-function check_val() {
+function check_val()
+{
 	//alert("Hello World!");
 	var form = document.signin;
 
@@ -45,6 +46,28 @@ function check_val() {
 	}
 	else
 	{
+		alert("[SINGIN SUCESSFUL]")
 		document.getElementById("signin").submit();
+	}
+}
+
+function check_log_val()
+{
+	var form = document.signin;
+
+	if(form.email.value == "" || form.email.value == null)
+	{
+		alert("Please enter your email.");
+		form.email.focus();
+	}
+	else if(form.password.value == "" || form.password.value == null)
+	{
+		alert("Please enter your password.");
+		form.email.focus();
+	}
+	else
+	{
+		alert("[LOGIN SUCESSFUL]");
+		document.getElementById("login").submit();
 	}
 }
