@@ -94,3 +94,17 @@ function check_dest_val() {
 		document.getElementById("desti").submit();
 	}
 }
+
+function checkout_val(){
+	var form = document.checkout;
+
+	if(form.firstname.value == "" || form.firstname.value == null)
+	{
+		alert("Please enter your first name.");
+		form.firstname.focus();
+	}
+	else{
+		alert("[CHECKOUT SUCCESSFUL]")
+		document.getElementById("chkout").submit();
+	}
+}
