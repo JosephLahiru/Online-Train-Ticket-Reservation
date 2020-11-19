@@ -81,3 +81,16 @@ function check_log_val()
 		document.getElementById("login").submit();
 	}
 }
+
+function check_dest_val() {
+	var form = document.destSel;
+
+	if(form.dest.value == "" || form.dest.value == null)
+	{
+		alert("Please enter your destination.");
+		form.dest.focus();
+	}
+	else{
+		document.getElementById("desti").submit();
+	}
+}

@@ -3,6 +3,7 @@
 <head>
 	<title>ORDER TICKETS</title>
 	<link rel="stylesheet" type="text/css" href="../res/main.css">
+	<script type="text/javascript" src="../res/signin.js"></script>
 </head>
 <body>
 	<img src="../res/pictures/SL2.jpg" width="100%">
@@ -17,7 +18,7 @@
 		</ul>
 	</div>
 	<div id="top">ORDER TICKETS</div>
-	<table border="0">
+	<table border="0" id="tb">
 		<tr>
 			<th rowspan="2">Station</th>
 			<th rowspan="2">Destination</th>
@@ -182,5 +183,18 @@
 			<td>10</td>
 		</tr>
 	</table>
+	<br>
+	<div id = "formd">
+		<form name="destSel" id="desti" action="pay.html" method="post">
+			Destination : <input type="text" name="dest">
+			Class : 
+			<select>
+				<option>First Class</option>
+				<option>Second Class</option>
+				<option>Third Class</option>
+			</select>
+			<input type="button" value="Submit" id="sub" onclick="check_dest_val()">
+		</form>
+	</div>
 </body>
 </html>
