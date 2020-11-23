@@ -123,3 +123,8 @@ label {
   padding: 7px 0;
   font-size: 24px;
 }
+
+body {
+  margin: 0;
+  color: #212529;
+}
