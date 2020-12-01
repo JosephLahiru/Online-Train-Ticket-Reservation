@@ -3,72 +3,79 @@
 	<head>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../res/main.css">
+		<link rel="stylesheet" type="text/css" href="../res/bootstrap/css/bootstrap.css">
 		<script type="text/javascript" src="../res/signin.js"></script>
 	</head>
 
 	<body>
-		<div id="backgr">
-			<table id="tb" border="0">
-				<form form name="checkout" action="home.html" method="post" id="chkout" >
-					<tr>
-						<td rowspan="2" style="width: 50%; padding: 0 16px; text-align: left;">
-							<h3>Billing Address</h3>
-							<label for="fname"><i class="fa fa-user"></i> Full Name</label>
-							<input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-							<label for="email"><i class="fa fa-envelope"></i> Email</label>
-							<input type="text" id="email" name="email" placeholder="john@example.com">
-							<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-							<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-							<label for="city"><i class="fa fa-institution"></i> City</label>
-							<input type="text" id="city" name="city" placeholder="New York">
-							<label for="state">State</label>
-							<input type="text" id="state" name="state" placeholder="NY">
-							<label for="zip">Zip</label>
-							<input type="text" id="zip" name="zip" placeholder="10001">
-						</td>
+		<div class="row mb-5"></div>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div id="backgr">
+					<table id="tb" border="0">
+						<form form name="checkout" action="home.html" method="post" id="chkout" >
+							<tr>
+								<td rowspan="2" style="width: 50%; padding: 0 16px; text-align: left;">
+									<h3>Billing Address</h3>
+									<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+									<input type="text" id="fname" name="firstname">
+									<label for="email"><i class="fa fa-envelope"></i> Email</label>
+									<input type="text" id="email" name="email">
+									<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+									<input type="text" id="adr" name="address">
+									<label for="city"><i class="fa fa-institution"></i> City</label>
+									<input type="text" id="city" name="city">
+									<label for="state">State</label>
+									<input type="text" id="state" name="state">
+									<label for="zip">Zip</label>
+									<input type="text" id="zip" name="zip">
+								</td>
 
-						<td colspan="2" style="padding: 0 16px; text-align: left;">
-							<h3>Payment</h3>
-							<label for="fname">Accepted Cards</label>
+								<td colspan="2" style="padding: 0 16px; text-align: left;">
+									<h3>Payment</h3>
+									<label for="fname">Accepted Cards</label>
 
-							<div id="icon">
-								<i class="fa fa-cc-visa" style="color:navy;"></i>
-								<i class="fa fa-cc-amex" style="color:blue;"></i>
-								<i class="fa fa-cc-mastercard" style="color:red;"></i>
-								<i class="fa fa-cc-discover" style="color:orange;"></i>
-							</div>
+									<div id="icon">
+										<i class="fa fa-cc-visa" style="color:navy;"></i>
+										<i class="fa fa-cc-amex" style="color:blue;"></i>
+										<i class="fa fa-cc-mastercard" style="color:red;"></i>
+										<i class="fa fa-cc-discover" style="color:orange;"></i>
+									</div>
 
-							<label for="cname">Name on Card</label>
-							<input type="text" id="cname" name="cardname" placeholder="John More Doe">
-							<label for="ccnum">Credit card number</label>
-							<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-							<label for="expmonth">Exp Month</label>
-							<input type="text" id="expmonth" name="expmonth" placeholder="September">
-						</td>
-					</tr>
+									<label for="cname">Name on Card</label>
+									<input type="text" id="cname" name="cardname">
+									<label for="ccnum">Credit card number</label>
+									<input type="text" id="ccnum" name="cardnumber">
+									<label for="expmonth">Exp Month</label>
+									<input type="text" id="expmonth" name="expmonth">
+								</td>
+							</tr>
 
-					<tr>
-						<td style="padding: 0 16px; text-align: left;">
-							<label for="expyear">Exp Year</label>
-							<input type="text" id="expyear" name="expyear" placeholder="2018">
-						</td>
+							<tr>
+								<td style="padding: 0 16px; text-align: left;">
+									<label for="expyear">Exp Year</label>
+									<input type="text" id="expyear" name="expyear" placeholder="2018">
+								</td>
 
-						<td style="padding: 0 16px; text-align: left;">
-							<label for="cvv">CVV</label>
-							<input type="text" id="cvv" name="cvv" placeholder="352">
-						</td>
-					</tr>
+								<td style="padding: 0 16px; text-align: left;">
+									<label for="cvv">CVV</label>
+									<input type="text" id="cvv" name="cvv" placeholder="352">
+								</td>
+							</tr>
 
-					<tr>
-						<td colspan="3" style="padding: 0 16px; text-align: left;">        
-							<label>
-								<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-							</label>
-							<input type="button" value="Continue to checkout" id="sub" onclick="checkout_val()">
-						</td>
-					</tr>
-				</form>
-			</table>
+							<tr>
+								<td colspan="3" style="padding: 0 16px; text-align: left;">        
+									<label>
+										<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+									</label>
+									<input type="button" value="Continue to checkout" id="sub" onclick="checkout_val()">
+								</td>
+							</tr>
+						</form>
+					</table>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

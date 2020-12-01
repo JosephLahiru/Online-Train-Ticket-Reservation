@@ -2,11 +2,17 @@
 {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 2px;
   overflow: hidden;
   background-color: #696969;
   font-size: 19px;
   font-family: Sans-serif;
+  width: 100%; 
+}
+
+#imgg
+{
+  width: 100%;
 }
 
 li a
@@ -125,6 +131,9 @@ label {
 }
 
 body {
+  background-repeat: no-repeat;
+  background-image: url("pictures/train-back.jpg");
+  background-attachment: fixed;
   margin: 0;
-  color: #212529;
+  height: 100%;
 }
