@@ -8,15 +8,15 @@ In this project you will build a moderate-size Web site. Each group will have 4 
 - Open a command prompt in projects root directory.
 - Run the command to start a server on localhost in a given port.
 - Command : `php -S localhost:4000`
-- Then run `http://localhost:4000/codes/index.html` in your favorite browser.
+- Then run `http://localhost:4000/codes/index.php` in your favorite browser.
 -->
 ## General Requirements
 
-- Website should have minimum 10 pages 
+- Website should have minimum 10 pages
 - Each of those pages should use same or similar style, so that the pages look like they belong to the same website.
--	Each page should have meaningful titles 
+-	Each page should have meaningful titles
 -	Save the home page with the name, index.html
--	All the web pages should have meaningful names 
+-	All the web pages should have meaningful names
 
 ## Technical Requirements
 
@@ -55,4 +55,4 @@ In this project you will build a moderate-size Web site. Each group will have 4 
 
 ## Submission
 
-You should compress all your files into a zip (.zip) file and name like "project_&lt;group-number.zip&gt;". Submit it to LMS on or before 30-11-2020. 
+You should compress all your files into a zip (.zip) file and name like "project_&lt;group-number.zip&gt;". Submit it to LMS on or before 30-11-2020.
